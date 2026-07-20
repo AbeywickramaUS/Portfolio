@@ -90,12 +90,11 @@ export default function ContactPanel() {
             </div>
 
             {/* Resume Download */}
-            <motion.a
+            <a
               href="/assets/Umesha_Abeywickrama_CV.pdf"
-              download
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.97 }}
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl neumorph text-neon-cyan font-semibold text-sm transition-all duration-300 hover:glow-cyan"
+              download="Umesha_Abeywickrama_CV.pdf"
+              type="application/pdf"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl neumorph text-neon-cyan font-semibold text-sm transition-all duration-300 hover:glow-cyan hover:scale-105 active:scale-95"
             >
               <svg
                 className="w-5 h-5"
@@ -111,7 +110,7 @@ export default function ContactPanel() {
                 />
               </svg>
               Download Resume
-            </motion.a>
+            </a>
           </GlassCard>
         </motion.div>
       </div>

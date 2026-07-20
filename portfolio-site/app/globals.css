@@ -42,6 +42,20 @@ body {
   font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
   line-height: 1.6;
   overflow-x: hidden;
+  cursor: url('/assets/cursors/cursor-default.svg') 2 1, auto;
+}
+
+/* ─── Custom Cursors ─── */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+select,
+label[for],
+.cursor-pointer,
+[onclick] {
+  cursor: url('/assets/cursors/cursor-pointer.svg') 10 1, pointer;
 }
 
 /* ─── Custom Scrollbar ─── */
